@@ -6,15 +6,15 @@ for your back admin webpages with most common regions to be extended.
 
 1- Download the entire project and copy it  with carefully (merge App files if need it) into your new Symfony2 project
 
-2- Setting up a virual host pointing to your Symfony/web/ folder (this is impotant for assets works)
+2- Setting up a virual host pointing to your Symfony/web/ folder (this is important to get assets works)
 
-3- Configure your Symfony commons (configs,database,etc)
+3- Configure your Symfony commons (configs,database,etc...)
 
-4- Run the command: composer update (download vendors folders)
+4- Run the command: composer update
 
 5- Run the command: php app/console assets:install
 
-6- Run your http://charisma.virtualhost/app_dev.php
+6- Now run your http://charisma.virtualhost/app_dev.php
 
 (homepage must be set to AppBundle:DefaultController:index or another file extending app/Resources/views/base.html.twig)
 
