@@ -2,7 +2,7 @@ Charisma for Symfony
 ========================
 
 This is just the base layout/template for Symfony 2.6 PHP (Charisma)
-for your back admin webpages with most common regions to be extended.
+for your back admin webpages with most common regions extended.
 
 1- Download the entire project and copy it  with carefully (merge App files if need it) into your new Symfony2 project
 
@@ -29,5 +29,5 @@ Leave a comment, thanks
 
 Original project: https://github.com/usmanhalalit/charisma
 
-by http://jcmartin.info/ - @juliomatcom
+by @juliomatcom
 

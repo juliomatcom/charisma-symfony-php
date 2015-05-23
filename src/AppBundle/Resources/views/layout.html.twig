@@ -140,64 +140,64 @@
 {% endblock %}
 
 <div id="content" class="col-lg-10 col-sm-10">
-<!-- content starts -->
-<div>
-    {% block breadcrumb %}
-        <ul class="breadcrumb">
-            <li>
-                <a href="#">Home</a>
-            </li>
-            <li>
-                <a href="#">Dashboard</a>
-            </li>
-        </ul>
-    {% endblock %}
-</div>
-    {%block big_boxes %}
-        {% include 'AppBundle:Includes:home_boxes.html.twig' %}
-    {% endblock %}
+    <!-- content starts -->
+    <div>
+        {% block breadcrumb %}
+            <ul class="breadcrumb">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Dashboard</a>
+                </li>
+            </ul>
+        {% endblock %}
+    </div>
+        {%block big_boxes %}
+            {% include 'AppBundle:Includes:home_boxes.html.twig' %}
+        {% endblock %}
 
-<div class="row">
-    <div class="box col-md-12">
-        <div class="box-inner">
-            <div class="box-header well">
-                <h2><i class="{%block windows_icon %}glyphicon glyphicon-info-sign{% endblock %}"></i>{% block windows_title %} Introduction to Charisma for Symfony {% endblock %}</h2>
+    <div class="row">
+        <div class="box col-md-12">
+            <div class="box-inner">
+                <div class="box-header well">
+                    <h2><i class="{%block windows_icon %}glyphicon glyphicon-info-sign{% endblock %}"></i>{% block windows_title %} Introduction to Charisma for Symfony {% endblock %}</h2>
 
-                {% block windows_box_icon  %}
-                    <div class="box-icon">
-                        <a href="#" class="btn btn-setting btn-round btn-default"><i
-                                    class="glyphicon glyphicon-cog"></i></a>
-                        <a href="#" class="btn btn-minimize btn-round btn-default"><i
-                                    class="glyphicon glyphicon-chevron-up"></i></a>
-                        <a href="#" class="btn btn-close btn-round btn-default"><i
-                                    class="glyphicon glyphicon-remove"></i></a>
-                    </div>
-                {% endblock %}
-            </div>
-            <div class="box-content row">
-                <div class="col-lg-7 col-md-12">
-                    {% block main_content %}
-                        {# this is the main windows for display content #}
-
+                    {% block windows_box_icon  %}
+                        <div class="box-icon">
+                            <a href="#" class="btn btn-setting btn-round btn-default"><i
+                                        class="glyphicon glyphicon-cog"></i></a>
+                            <a href="#" class="btn btn-minimize btn-round btn-default"><i
+                                        class="glyphicon glyphicon-chevron-up"></i></a>
+                            <a href="#" class="btn btn-close btn-round btn-default"><i
+                                        class="glyphicon glyphicon-remove"></i></a>
+                        </div>
                     {% endblock %}
                 </div>
+                <div class="box-content row">
+                    <div class="col-lg-7 col-md-12">
+                        {% block main_content %}
+                            {# this is the main windows for display content #}
 
+                        {% endblock %}
+                    </div>
+
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<hr>
+    <hr>
 
-    {% block modal %}
-        {% include 'AppBundle:Includes:modal.html.twig' %}
-    {% endblock %}
+        {% block modal %}
+            {% include 'AppBundle:Includes:modal.html.twig' %}
+        {% endblock %}
 
-<footer class="row">
-    {%block footer_content %}
-        {% include 'AppBundle:Includes:footer.html.twig' %}
-    {% endblock %}
-</footer>
+    <footer class="row">
+        {%block footer_content %}
+            {% include 'AppBundle:Includes:footer.html.twig' %}
+        {% endblock %}
+    </footer>
 
 </div><!--/.fluid-container-->
 
